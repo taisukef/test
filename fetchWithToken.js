@@ -11,4 +11,5 @@ const fetchWithToken = async (accessToken, url, json) => {
   const method = "PUT";
   return await (await fetch(url, { method, headers, body })).json();
 };
+
 export { fetchWithToken };
